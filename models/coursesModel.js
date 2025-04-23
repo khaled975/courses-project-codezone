@@ -9,6 +9,19 @@ const coursesSchema = mongoose.Schema({
     type: Number,
     require: true,
   },
+  description: {
+    type: String,
+    require: true,
+  },
+  image: {
+    type: String,
+  },
+  startDate: {
+    type: Date,
+  },
+  endDate: {
+    type: Timestamps,
+  },
 });
 
 module.exports = mongoose.model("course", coursesSchema);
